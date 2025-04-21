@@ -27,7 +27,7 @@ public class TelaProdutosVendidos extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblProdutosVendidos = new javax.swing.JTable();
         btnVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -36,7 +36,7 @@ public class TelaProdutosVendidos extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel2.setText("Lista de Produtos Vendidos");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblProdutosVendidos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -47,7 +47,7 @@ public class TelaProdutosVendidos extends javax.swing.JFrame {
                 "ID", "Nome", "Valor", "Status"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tblProdutosVendidos);
 
         btnVoltar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnVoltar.setText("Voltar");
@@ -92,7 +92,7 @@ public class TelaProdutosVendidos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
-        this.dispose();
+        dispose();
     }//GEN-LAST:event_btnVoltarActionPerformed
 
     /**
@@ -135,6 +135,6 @@ public class TelaProdutosVendidos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tblProdutosVendidos;
     // End of variables declaration//GEN-END:variables
 }
