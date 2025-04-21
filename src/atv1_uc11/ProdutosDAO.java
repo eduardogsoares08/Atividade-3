@@ -86,13 +86,23 @@ public class ProdutosDAO {
             lista.add(produto);
         }
 
-        stmt.close();
-        conn.close();
     } catch (Exception e) {
         System.out.println("Erro: " + e.getMessage());
     }
 
     return lista;
+    }
+
+    public void venderProduto(int id) {
+    String sql = "UPDATE produtos SET status = 'Vendido' WHERE id = ?";
+    try {
+        PreparedStatement stmt = this.conn.prepareStatement(sql);
+        stmt.setInt(1, id);
+        stmt.executeUpdate();
+        stmt.close();
+    } catch (Exception e) {
+        System.out.println("Erro ao atualizar status: " + e.getMessage());
+    }
 }
 
 
